@@ -1,0 +1,357 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    margin: 0 8rem;
+}
+.logo{
+    width: 12rem;
+    height: 8rem;
+    margin-top: 2rem;
+}
+.header_text{
+    margin-top: 12rem;
+}
+.header_text h1{
+    width: 40rem;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+.box{
+    width: 1.2rem;
+    height: 1.2rem;
+    display: inline-block;
+    background: #f67c92;
+    margin-bottom: 1rem;
+}
+.header_text p{
+    width: 40rem;
+    font-size: 2rem;
+    color: rgb(109, 109, 109);
+}
+.common_btn{
+    padding: 2rem 4rem;
+    background: transparent;
+    margin-top: 2rem;
+    outline: none;
+    border: .3rem solid #f67c92;
+    transition: all 0.3s linear;
+    position: relative;
+    overflow: hidden;
+}
+.common_btn::before{
+    content: '';
+    width: 12rem;
+    height: 2rem;
+    background: black;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    transition: all 0.2s linear;
+    transform: translateX(-100%) rotate(45deg);
+}
+.common_btn:hover::before{
+    transform: translateX(150%) rotate(45deg);
+}
+a{
+    text-decoration: none;
+}
+.common_btn a{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.common_btn:hover{
+    background: #f67c92;
+}
+.lines{
+    margin-top: 2rem;
+}
+.line1{
+    width: 1.2rem;
+    height: 1.2rem;
+    background: #f67c92;
+    display: inline-block;
+}
+.line2{
+    width: 6rem;
+    height: .2rem;
+    background: #f67c92;
+    display: inline-block;
+}
+.line3{
+    width: 5rem;
+    height: .2rem;
+    background: #f67c92;
+    display: inline-block;
+}
+#sidenav{
+    width: 25rem;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0%;
+    background: #f67c92;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+}
+#sidenav ul{
+    margin-top: 9.5rem;
+}
+#sidenav ul li{
+    list-style: none;
+    margin: 5rem;
+}
+#sidenav ul li a{
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+#menubtn{
+    position: fixed;
+    right: 4rem;
+    top: 4rem;
+    width: 6rem;
+    z-index: 2;
+}
+/* <!--------------------about offer-----------------> */
+
+#about,#offer{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about_left_col{
+    flex-basis: 50%;
+}
+.about_left_col img{
+    width: 100%;
+}
+.about_right_col{
+    flex-basis: 50%;
+}
+.about_text{
+    text-align: right;
+    width: 60rem;
+}
+.about_text h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.about_text p{
+    font-size: 1.8rem;
+    color: rgb(109, 109, 109);
+}
+.about_text h2{
+    font-size: 2rem;
+    font-style: italic;
+    margin:1.5rem 0;
+}
+.about_text h3{
+    font-size: 1.8rem;
+    color: rgb(109, 109, 109);
+    font-style: italic;
+}
+#features{
+    padding-top: 10rem;
+   padding-bottom: 10rem;
+}
+.features_row{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.feature_col{
+    flex-basis: 25%;
+    text-align: center;
+}
+.feature_col img{
+    width: 20rem;
+}
+.feature_col h3{
+    font-size: 1.8rem;
+    line-height: 4rem;
+    font-weight: bolder;
+}
+.feature_col p{
+    font-size: 1.2rem;
+}
+.features_btn{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 5rem;
+}
+.features_btn .lines{
+    text-align: right;
+    margin-right: 5rem;
+}
+/* ================courses===================== */
+#courses{
+    margin: 5rem 0;
+}
+.courses_row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.courses_left_col{
+    flex-basis: 50%;
+}
+.courses_right_col{
+    flex-basis: 50%;
+}
+.courses_right_col img{
+    width: 100%;
+}
+.course_text{
+    width: 45rem;
+}
+.course_text h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.course_text p{
+    font-size: 1.8rem;
+    color: rgb(109, 109, 109);
+}
+/* ==========contact========= */
+#contact{
+    margin: 5rem 0;
+}
+.contact_row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact_left_col{
+    flex-basis: 50%;
+}
+.contact_right_col{
+    flex-basis: 50%;
+}
+.contact_right_col img{
+    width: 100%;
+}
+.contact_left_col h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+form{
+    max-width: 35rem;
+}
+form input{
+    width: 100%;
+    padding: 2rem 4rem;
+    outline: none;
+    margin-bottom: 1.5rem;
+    box-sizing: border-box;
+    border: .2rem solid #f67c92;
+    font-size: 1.5rem;
+}
+.contact_btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact_btn button{
+    flex-basis: 48%;
+}
+.contact_btn button a{
+    font-size: 1.8rem;
+}
+#footer{
+    margin: 2rem 0;
+    margin-bottom: 3rem;
+}
+hr{
+    border: none;
+    border-top: .2rem solid #f67c92;
+}
+.footer_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer_left_col{
+    flex-basis: 50%;
+    margin-top: 6rem;
+}
+.footer_right_col{
+    flex-basis: 35%;
+}
+.footer_links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer_links h4{
+    font-size: 1.5rem;
+    margin-bottom: 1.8rem;
+    color: #f67c92;
+}
+small{
+    font-size: 1.2rem;
+}
+.footer_info{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.footer_logo img{
+   width: 10rem;    
+}
+.copyright,.footer_logo{
+    flex-basis: 40%;
+}
+.footer_logo button{
+    padding: 1rem 3rem;
+}
+.copyright{
+    font-size: 1.2rem;
+}
+.copyright h4:first-child{
+    margin-bottom: 1rem;
+}
+.copyright h4{
+    font-weight: 400;
+}
+/* ==========SOCIAL ICONS-========== */
+.social_icons{
+    width: 5rem;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.social_icons img{
+    display: block;
+    width: 2rem;
+    margin: 0 auto 2rem;
+    cursor: pointer;
+}
